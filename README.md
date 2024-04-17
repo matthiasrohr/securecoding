@@ -1,15 +1,8 @@
 # securecoding
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
 ```ruby
 # This is highlighted code
 
-``` javascript
 function test() {
     console.log("test");
 }
