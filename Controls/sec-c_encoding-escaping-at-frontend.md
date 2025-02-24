@@ -5,7 +5,7 @@ toc_icon: "cog"
 toc_sticky: true
 ---
 
-# SEC-C - Encoding/Escaping at the Frontend (Preventing XSS)
+#  {{site.TITLE_CONTROLS_XSSPREVENT}}
 
 ## Category
 
