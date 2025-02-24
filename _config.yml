@@ -5,15 +5,14 @@ avatar:
 title: Secure Coding Guidelines
 description: Secure coding guidelines.
 author: Matthias Rohr
-#remote_theme: " just-the-docs/just-the-docs"
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 repository: "matthiasrohr/securecoding"
 enable_copy_code_button: true
-#titles_from_headings:
-#  enabled:     true
-#  strip_title: true
-#  collections: true 
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true 
 search: true
   
 # Exclude these files from production site
