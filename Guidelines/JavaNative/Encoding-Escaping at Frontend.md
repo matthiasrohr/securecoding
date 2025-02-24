@@ -12,7 +12,7 @@ As an example, the following code is safe:
  onclick="alert('<%=  StringEscapeUtils.escapeEcmaScript(bean.value1) %>');">
  click me</button>
 <div style="width:<%=  StringEscapeUtils.escapeHtml(bean.value1) %>">
-'''
+```
 
 ## Expression Language (EL)
 
@@ -22,7 +22,7 @@ Within JSP files you can use expression language to encode bean variables:
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 ...
 <li><a class="current" href="#"><b>[${fn:escapeXml(name)}]</b></a></li>
-'''
+```
 
 ## OWASP Java Encoding Project
 
@@ -32,7 +32,7 @@ The following examples show how parameters can be handled securely for different
 
 |  Context  | Example |
 | ------------- | ------------- | 
-| HTML | '''<body><%= Encode.forHtml(textValue) %></body>''' |
+| HTML | ```<body><%= Encode.forHtml(textValue) %></body>``` |
 | HTML Attribute |  | 
 | JavaScript Blocks |  | 
 | JavaScript Variables |  |
@@ -58,7 +58,7 @@ PolicyFactory policy = new HtmlPolicyBuilder()
 .requireRelNofollowOnLinks()
 .build();
 String safeHTML = policy.sanitize(untrustedHTML);
-'''
+```
 
 #### Implementation via Bean Validation
 
@@ -68,7 +68,7 @@ Example:
 ```java
 @SafeHtml
 public String getHtml();
-'''
+```
 
 ## References
 * Java HTML Sanitizer: GitHub - OWASP/java-html-sanitizer: Takes third-party HTML and produces HTML that is safe to embed in your web application.  Fast and easy to configure. 
