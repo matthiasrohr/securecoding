@@ -14,10 +14,6 @@ titles_from_headings:
   strip_title: true
   collections: true 
 search: true
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: 
   
 # Exclude these files from production site
 exclude:
