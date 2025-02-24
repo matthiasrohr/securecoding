@@ -12,8 +12,8 @@ Cross-site Scripting (XSS) attacks can be prevented or made more difficult by s
 
 |  Context  | Method | Input | Output |
 | ------------- | ------------- | ------------- | ------------- |
-| HTML (Body / Attribute)  | HTML Entity Encoding  | `'` <br> `"` <br> `>` <br> `<`  | `&#x27;` `&#x22;` `&#x3E;` `&#x3C;` |
-| JavaScript Variable  | JavaScript Escaping | `'` `|` `\` `'` |
+| HTML (Body / Attribute)  | HTML Entity Encoding  | `'` <br> `"` <br> `>` <br> `<`  | `&#x27;`<br> `&#x22;` <br>`&#x3E;` <br>`&#x3C;` |
+| JavaScript Variable  | JavaScript Escaping | `'`<br> `|` <br>`\` <be> `'` |
 | GET Parameter | URL Encoding | `&` | `%26` |
 | CSS | CSS Escaping | | |
 | HTML | HTML Sanitization (see below) | | |
