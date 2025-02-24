@@ -12,9 +12,9 @@ Cross-site Scripting (XSS) attacks can be prevented or made more difficult by s
 
 |  Context  | Method | Input | Output |
 | ------------- | ------------- | ------------- | ------------- |
-| HTML (Body / Attribute)  | HTML Entity Encoding  | '  "  >  <  | `&#x27;` `&#x22;` `&#x3E;` `&#x3C;` |
-| JavaScript Variable  | JavaScript Escaping | ' | \' |
-| GET Parameter | URL Encoding | & | %26 |
+| HTML (Body / Attribute)  | HTML Entity Encoding  | `'`  `"`  `>`  `<`  | `&#x27;` `&#x22;` `&#x3E;` `&#x3C;` |
+| JavaScript Variable  | JavaScript Escaping | `'` `|` `\` `'` |
+| GET Parameter | URL Encoding | `&` | `%26` |
 | CSS | CSS Escaping | | |
 | HTML | HTML Sanitization (see below) | | |
 | JSON | JSON Serialization | | |
@@ -42,9 +42,9 @@ Value: <%= ${bean.value1} %>
 
 ```
 
-In the first two examples, the bean value "value1" is simply written into the view, which happens unvalidated (= not encoded). In the third example, we use <outputText>, a common JSF tag for writing output into the view. The standard behavior of this tag is that it automatically encodes all output.
+In the first two examples, the bean value "value1" is simply written into the view, which happens unvalidated (= not encoded). In the third example, we use `<outputText>`, a common JSF tag for writing output into the view. The standard behavior of this tag is that it automatically encodes all output.
 
-However, since the developer used the attribute escape="false", this standard secure behavior is turned off and this tag is hence insecure. Similar ways to write output into the view can be found in almost all other languages and Web frameworks.
+However, since the developer used the attribute `escape="false"`, this standard secure behavior is turned off and this tag is hence insecure. Similar ways to write output into the view can be found in almost all other languages and Web frameworks.
 
 ## Coding Guidelines
 
