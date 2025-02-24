@@ -32,11 +32,11 @@ The following examples show how parameters can be handled securely for different
 
 |  Context  | Example |
 | ------------- | ------------- | 
-| HTML | ```<body><%= Encode.forHtml(textValue) %></body>``` |
-| HTML Attribute |  | 
-| JavaScript Blocks |  | 
-| JavaScript Variables |  |
-| URLs |  |
+| HTML | ``` <body><%= Encode.forHtml(textValue) %></body>``` |
+| HTML Attribute | ``` <input type="text" name="address" value="<%= Encode.forHtmlAttribute(addressData) %>" /> ```| 
+| JavaScript Blocks | ```<script type="text/javascript"> var msg = "<%= Encode.forJavaScriptBlock(message) %>"; alert(msg); </script>```  | 
+| JavaScript Variables | ```<button onclick="alert('<%= Encode.forJavaScriptAttribute(alertMsg) %>');">click me</button>```  |
+| URLs | ```<a href="/search?value=<%= Encode.forUriComponent(parameterValue) %>&order=1#top">```  |
 
 ## Secure Processing of HTML
 
