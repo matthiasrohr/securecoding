@@ -40,7 +40,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/matthiasrohr
+      url: "https://github.com/matthiasrohr"
   
 defaults:
   # _pages
