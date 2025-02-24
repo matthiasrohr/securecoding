@@ -1,11 +1,4 @@
----
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "cog"
-toc_sticky: true
----
-
-#  {{site.TITLE_CONTROLS_XSSPREVENT}}
+#  SEC-C - Encoding/Escaping at the Frontend (Preventing XSS)
 
 ## Category
 
