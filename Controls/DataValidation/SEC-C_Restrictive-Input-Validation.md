@@ -6,6 +6,17 @@ Data Validation & Secure Data Processing
 ## Description
 Since basically all attacks against web applications are conducted by some sort of crafted input data, restricting these inputs is generally a good approach to improve from a security perspective. Only a few vulnerabilities originate in insecure input validation (e.g. business logic flaws) though. In most cases, input validation is an additional measure that can prevent the exploitation of vulnerabilities (e.g. SQL Injection or Cross-site Scripting). Restrictive input validation means being as restrictive as it is allowed by the specification.
 
+<details>
+<summary>My top languages</summary>
+
+| Rank | Languages |
+|-----:|-----------|
+|     1| JavaScript|
+|     2| Python    |
+|     3| SQL       |
+
+</details>
+
 > [!NOTE]
 > Restrictive input validation is a secondary line of defense for most attacks. It can often prevent the exploitation of certain attacks without fixing the root cause.
 
